@@ -1,0 +1,24 @@
+# encoding: utf-8
+# 2024 R1
+SetScriptVersion(Version="24.1.144")
+Save(Overwrite=True)
+template1 = GetTemplate(TemplateName="Fluid Flow")
+system1 = template1.CreateSystem()
+system2 = template1.CreateSystem(
+    Position="Right",
+    RelativeTo=system1)
+system3 = template1.CreateSystem(
+    Position="Right",
+    RelativeTo=system2)
+system4 = template1.CreateSystem(
+    Position="Right",
+    RelativeTo=system3)
+system5 = template1.CreateSystem(
+    Position="Right",
+    RelativeTo=system4)
+system1.DisplayText = "FlatPlate"
+system2.DisplayText = "Circle"
+system3.DisplayText = "Elilipse"
+system4.DisplayText = "Airfoil"
+system5.DisplayText = "Flat plate"
+Save(Overwrite=True)
