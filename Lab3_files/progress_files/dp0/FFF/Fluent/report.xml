@@ -103,7 +103,7 @@ Boundary Conditions
 
          Condition                  Value   
          --------------------------------
-         Velocity Magnitude [m/s]   10      
+         Velocity Magnitude [m/s]   0.58    
 
       wall
 
