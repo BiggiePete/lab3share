@@ -88,6 +88,7 @@ Boundary Conditions
       pressure_output     7    pressure-outlet   
       velocity_in         6    velocity-inlet    
       wall                5    wall              
+      obj                 16   wall              
       wall-surface_body   8    wall              
 
    Setup Conditions
@@ -104,6 +105,14 @@ Boundary Conditions
          Velocity Magnitude [m/s]   10      
 
       wall
+
+         Condition                  Value               
+         --------------------------------------------
+         Wall Motion                Stationary Wall     
+         Shear Boundary Condition   No Slip             
+         Wall Surface Roughness     rough-bc-standard   
+
+      obj
 
          Condition                  Value               
          --------------------------------------------
